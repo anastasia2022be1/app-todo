@@ -1,6 +1,7 @@
 import express from "express";
 import { logger } from "./mittlewares/logger.js";
 import todosRouter from "./routes/todos.js";
+import cors from 'cors';
 
 const app = express();
 
