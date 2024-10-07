@@ -17,5 +17,16 @@ app.use(logger);
 // Подключение роутов для управления транспортными средствами
 app.use("/api/todos", todosRouter);
 
+// globale Fehlerbehandlung
+app.use((err, req, res, next) => {
+    console.error("error")
+    res.status(500).json({message: 'Something went wrong'})
+  })
+  
+  // default route
+  app.use((req, res) => {
+    res.status(404).send("Not found");
+  })
+
 const PORT = 3005;
 app.listen(PORT, () => console.log(`Server läuft unter: http://localhost:${PORT}`));
