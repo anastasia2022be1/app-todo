@@ -116,9 +116,8 @@ Die Logger-Middleware im Backend protokolliert alle eingehenden Anfragen und gib
 ## Beiträge
 Beiträge sind willkommen! Bitte erstellen Sie ein Issue oder senden Sie einen Pull-Request.
 
-Abhängigkeiten
+## Abhängigkeiten
 Das Backend verwendet die folgenden Abhängigkeiten:
-
     
     "dependencies": {
       "cors": "^2.8.5",
