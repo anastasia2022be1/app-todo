@@ -52,7 +52,7 @@ todosRouter.patch("/:id", (req, res) => {
   const todo = todos.find(todo => todo.id === id);
 
   if (!todo) {
-    return res.status(404).send("Задача не найдена");
+    return res.status(404).send("Todo wurde nicht gefunden");
   }
 
   // Обновляем только переданные свойства
@@ -63,7 +63,7 @@ todosRouter.patch("/:id", (req, res) => {
     todo.completed = req.body.completed;
   }
 
-  res.status(200).json({ message: "Задача обновлена", todo });
+  res.status(200).json({ message: "Todo wurde aktualisieren", todo });
 });
 
   export default todosRouter;

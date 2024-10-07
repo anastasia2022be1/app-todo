@@ -107,16 +107,29 @@ Das Frontend bietet eine Benutzeroberfläche zur Verwaltung von ToDo-Elementen. 
 - Bestehende Aufgaben anzeigen
 - Aufgaben als erledigt markieren
 - Aufgaben löschen
-- Middleware
-- Logger Middleware
-- Die Logger-Middleware im Backend protokolliert alle eingehenden Anfragen und gibt nützliche Informationen in der Konsole aus.
+
+
+## Middleware
+### Logger Middleware
+Die Logger-Middleware im Backend protokolliert alle eingehenden Anfragen und gibt nützliche Informationen in der Konsole aus.
 
 ## Beiträge
 Beiträge sind willkommen! Bitte erstellen Sie ein Issue oder senden Sie einen Pull-Request.
+
+Abhängigkeiten
+Das Backend verwendet die folgenden Abhängigkeiten:
+
+    
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.21.0",
+      "nodemon": "^3.1.7"
+    }
+
 
 ## Autor
 Anastasia Sevastianova
 
 LinkedIn -  https://www.linkedin.com/in/anastasia-sevastianova;
 
-GitHub - https://github.com/anastasia2022be1
+GitHub - https://github.com/anastasia2022be1/app-todo
