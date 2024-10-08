@@ -8,7 +8,7 @@ const app = express();
 // Middleware для обработки JSON-запросов
 app.use(express.json());
 
-// Middleware für CORS
+// Middleware CORS
 app.use(cors());
 
 // Подключение логгера (все запросы будут логироваться)
